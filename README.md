@@ -25,3 +25,19 @@ public class S21218_00{
 - 세번째는 만들어진 class 파일을 실행 시킨다.
 #### TOOLS
 <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
+
+#### 2023-03-08 과제
+```java
+public class test1{
+	public static void main(String[] args){
+	int cnt = 0;
+	int sum = 0;
+	for(int i = 0; i < 10; i++){
+		cnt+=1;
+		sum = sum + cnt;
+		System.out.println("cnt :" + cnt + "sum :" + sum);
+	}
+		System.out.println("sum :" + sum);
+         }
+   }
+```
