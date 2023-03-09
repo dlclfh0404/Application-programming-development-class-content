@@ -27,6 +27,8 @@ public class S21218_00{
 <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
 
 #### 2023-03-08 과제
+![image](https://user-images.githubusercontent.com/106458316/223935708-15ee0bb8-398e-4dc8-941e-903e79d131e1.png)
+
 ```java
 public class test1{
 	public static void main(String[] args){
@@ -41,3 +43,6 @@ public class test1{
          }
    }
 ```
+### 결과값
+![image](https://user-images.githubusercontent.com/106458316/223935638-2db8bad1-ec67-4c3b-8692-7f9cd1ececc6.png)
+
