@@ -30,21 +30,20 @@ public class S21218_00{
 ![image](https://user-images.githubusercontent.com/106458316/223935708-15ee0bb8-398e-4dc8-941e-903e79d131e1.png)
 
 ```java
-import java.io.IOException;
+public class test1{
+	public static void main(String[] args){
+		int cnt = 0; //카운트 10까지 하는 변수
+		int sum = 0; // 합계 변수
 
-public class S21218_01{
-	public static void main(String[] args) throws Exception{
+		for(int i = 0; i < 10; i++){ // 1부터 10까지 더하는 for문
+			cnt+=1; 
+			sum = sum + cnt; 
+			System.out.println("cnt :" + cnt +" sum :" +sum);
+		}
+		System.out.println("sum :"+ sum);
+     	 }
+}	
 
-	int keyCode = System.in.read();
-	System.out.println("keyCode: "+keyCode);
-	String binaryString = Integer.toBinaryString(keyCode);
-	String octalString = Integer.toOctalString(keyCode);
-	String hexString = Integer.toHexString(keyCode);
-	System.out.println("2진수 : "+ binaryString);
-	System.out.println("8진수 : "+ octalString);
-	System.out.println("16진수 : "+ hexString);
-   }
-}
 ```
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/223935638-2db8bad1-ec67-4c3b-8692-7f9cd1ececc6.png)
@@ -67,7 +66,7 @@ public class S21218_01{
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/224190709-da0e9f69-2bba-4a92-b441-b8f6b968cbd7.png)
 
-##### 추가 (2진수 변환)
+##### 추가 (2진수,8진수,16진수 변환)
 ```java
 import java.io.IOException;
 
@@ -77,9 +76,30 @@ public class S21218_01{
 	int keyCode = System.in.read();
 	System.out.println("keyCode: "+keyCode);
 	String binaryString = Integer.toBinaryString(keyCode);
+	String octalString = Integer.toOctalString(keyCode);
+	String hexString = Integer.toHexString(keyCode);
 	System.out.println("2진수 : "+ binaryString);
+	System.out.println("8진수 : "+ octalString);
+	System.out.println("16진수 : "+ hexString);
    }
 }
 ```
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/224192857-55ce82d9-334a-4c8b-af50-d40a4e318f7e.png)
+
+##### 추가
+숫자 10자리 미만으로 입력 받아 ASCLL 코드 값으로 출력한다.
+```java
+import java.io.IOException;
+
+public class S21218_01v2{
+	public static void main(String[] args) throws Exception{
+		for(int i = 0; i < 10; i++){
+			int keyCode = System.in.read();
+			System.out.print(keyCode + " / ");
+		}
+   }
+}
+```
+#### 결과값
+![image](https://user-images.githubusercontent.com/106458316/224195832-926f9e20-f4ba-4992-955f-7ace48cd6f2f.png)
