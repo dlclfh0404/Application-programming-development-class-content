@@ -85,7 +85,8 @@ public class S21218_01{
 }
 ```
 #### 결과값
-![image](https://user-images.githubusercontent.com/106458316/224192857-55ce82d9-334a-4c8b-af50-d40a4e318f7e.png)
+![image](https://user-images.githubusercontent.com/106458316/224196732-2cef6629-eef7-418a-af8b-e2c0b0edc88c.png)
+
 
 ##### 추가
 숫자 10자리 미만으로 입력 받아 ASCLL 코드 값으로 출력한다.
