@@ -30,18 +30,21 @@ public class S21218_00{
 ![image](https://user-images.githubusercontent.com/106458316/223935708-15ee0bb8-398e-4dc8-941e-903e79d131e1.png)
 
 ```java
-public class test1{
-	public static void main(String[] args){
-	int cnt = 0;
-	int sum = 0;
-	for(int i = 0; i < 10; i++){
-		cnt+=1;
-		sum = sum + cnt;
-		System.out.println("cnt :" + cnt + "sum :" + sum);
-	}
-		System.out.println("sum :" + sum);
-         }
+import java.io.IOException;
+
+public class S21218_01{
+	public static void main(String[] args) throws Exception{
+
+	int keyCode = System.in.read();
+	System.out.println("keyCode: "+keyCode);
+	String binaryString = Integer.toBinaryString(keyCode);
+	String octalString = Integer.toOctalString(keyCode);
+	String hexString = Integer.toHexString(keyCode);
+	System.out.println("2진수 : "+ binaryString);
+	System.out.println("8진수 : "+ octalString);
+	System.out.println("16진수 : "+ hexString);
    }
+}
 ```
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/223935638-2db8bad1-ec67-4c3b-8692-7f9cd1ececc6.png)
