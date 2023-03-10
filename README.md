@@ -63,3 +63,20 @@ public class S21218_01{
 ```
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/224190709-da0e9f69-2bba-4a92-b441-b8f6b968cbd7.png)
+
+##### 추가 (2진수 변환)
+```java
+import java.io.IOException;
+
+public class S21218_01{
+	public static void main(String[] args) throws Exception{
+
+	int keyCode = System.in.read();
+	System.out.println("keyCode: "+keyCode);
+	String binaryString = Integer.toBinaryString(keyCode);
+	System.out.println("2진수 : "+ binaryString);
+   }
+}
+```
+#### 결과값
+![image](https://user-images.githubusercontent.com/106458316/224192857-55ce82d9-334a-4c8b-af50-d40a4e318f7e.png)
