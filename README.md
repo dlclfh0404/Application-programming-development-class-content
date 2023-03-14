@@ -104,3 +104,22 @@ public class S21218_01v2{
 ```
 #### 결과값
 ![image](https://user-images.githubusercontent.com/106458316/224195832-926f9e20-f4ba-4992-955f-7ace48cd6f2f.png)
+
+#### 2023-03-14 
+커맨드 라인으로 입력을 받아 아래와 같이 출력한다.<br>
+![image](https://user-images.githubusercontent.com/106458316/224906611-679c74ed-7100-4e90-93c6-8fa9e02d60dc.png)
+```java
+public class S21218_10{
+    public static void main(String[] args){
+        System.out.println("input :"+args.length);
+
+        for(int i = 0; i < args.length; i++){
+            System.out.println("args["+i+"] = "+args[i]);
+        }
+    }
+}
+```
+
+#### 결과값
+![image](https://user-images.githubusercontent.com/106458316/224906749-70d70911-91b6-4ab4-9bb8-848fbc96a682.png)
+
